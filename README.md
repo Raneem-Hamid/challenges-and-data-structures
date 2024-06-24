@@ -20,3 +20,11 @@ function called MaximumValue that accepts an array of integers as its parameter.
 A function called RemoveMiddleValue that takes in an array as its parameter.It should remove the value at the middle index of the array if the array length is odd, or the middle two values if the array length is even, and return the modified array.  
  
 [CC03 whiteboard](challenges/whiteboard-challenges/RemoveMiddleValuefromArray.jpeg "Visit CC03")
+
+
+## Challenge 04: Insert Middle Value into Array
+
+A function called MiddleValue that takes in an array and a value to be added as its parameters. The function should insert the value at the middle index of the array. If the array length is even, the value should be inserted just before the midpoint. The function should return the modified array.
+
+[CC04 whiteboard](challenges/whiteboard-challenges/InsertValueinMiddleofArray.png "Visit CC03")
+
