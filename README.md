@@ -33,3 +33,12 @@ A function called MiddleValue that takes in an array and a value to be added as 
 A function called FindDuplicates that takes in an array as its parameter. The function should return an array of duplicate values without utilizing any of the built-in methods provided by the language.
 
 [CC05 whiteboard](challenges/whiteboard-challenges/FindDuplicates.png "Visit CC05")
+
+
+## Challenge 06-A: Find Common Elements in Two Arrays 
+
+A function called CommonElements that accepts two arrays of integers as its parameters. Without utilizing any of the built-in methods provided by the language, the function should return a new array containing the common elements between the two input arrays.
+
+[CC06-A whiteboard](challenges/whiteboard-challenges/FindCommonElements-A.png "Visit CC06-A")
+
+[CC06-A Output](challenges/Common-Elements/outputOfFindCommonElements-A.png "Visit CC06-A/output")
