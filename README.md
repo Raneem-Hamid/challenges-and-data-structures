@@ -26,5 +26,10 @@ A function called RemoveMiddleValue that takes in an array as its parameter.It s
 
 A function called MiddleValue that takes in an array and a value to be added as its parameters. The function should insert the value at the middle index of the array. If the array length is even, the value should be inserted just before the midpoint. The function should return the modified array.
 
-[CC04 whiteboard](challenges/whiteboard-challenges/InsertValueinMiddleofArray.png "Visit CC03")
+[CC04 whiteboard](challenges/whiteboard-challenges/InsertValueinMiddleofArray.png "Visit CC04")
 
+## Challenge 05: Find Duplicates in Array
+
+A function called FindDuplicates that takes in an array as its parameter. The function should return an array of duplicate values without utilizing any of the built-in methods provided by the language.
+
+[CC05 whiteboard](challenges/whiteboard-challenges/FindDuplicates.png "Visit CC05")
