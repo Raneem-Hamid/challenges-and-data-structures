@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            int[] arr = { 1, 2, 3 ,1,2,3};      
+            Console.WriteLine("Duplicates: " + string.Join(", ", Find_Duplicates.FindDuplicates(arr)));
         }
 
     }
