@@ -42,3 +42,12 @@ A function called CommonElements that accepts two arrays of integers as its para
 [CC06-A whiteboard](challenges/whiteboard-challenges/FindCommonElements-A.png "Visit CC06-A")
 
 [CC06-A Output](challenges/Common-Elements/outputOfFindCommonElements-A.png "Visit CC06-A/output")
+
+
+## Challenge 06-B: Reverse Words
+
+A function called ReverseWords returns a string with the words in reverse order.
+
+[CC06-B whiteboard](challenges/whiteboard-challenges/ReverseWords.png "Visit CC06-B")
+
+[CC06-B Output](challenges/Reverse-Words/ReverseWordsOutput.png "Visit CC06-B/output")
