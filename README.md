@@ -53,10 +53,17 @@ A function called ReverseWords returns a string with the words in reverse order.
 [CC06-B Output](challenges/Reverse-Words/ReverseWordsOutput.png "Visit CC06-B/output")
 
 
-## Challenge 07: Linked List Implementation
+## Challenge 07: Linked List 
 
-Linked_List Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion. 
+- Linked_List Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion. 
 
 [CC07 whiteboard](challenges/whiteboard-challenges/LinkedList.png "Visit CC07")
 
 [CC07 Output](challenges/Data-Structures/LinkedList/LinkedListOutput.png "Visit CC07/output")
+
+
+- RemoveDuplicate Method: This method iterates through the linked list and removes any nodes that contain duplicate data values. It returns the count of the duplicate nodes that were removed.
+
+[CC07-B whiteboard](challenges/whiteboard-challenges/LinkedListRemoveDuplicates.png "Visit CC07")
+
+[CC07-B Output](challenges/Data-Structures/LinkedList/RemoveDuplicates/LinkedListDuplicatesOutput.png "Visit CC07/output")
