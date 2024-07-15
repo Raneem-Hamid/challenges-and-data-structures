@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Data-Structures\LinkedList\RemoveDuplicates\" />
     <Folder Include="whiteboard-challenges\" />
   </ItemGroup>
 

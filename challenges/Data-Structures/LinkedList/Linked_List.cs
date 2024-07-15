@@ -130,5 +130,29 @@ namespace challenges.Data_Structures.LinkedList
             }
         }
 
+
+        public int RemoveDuplicate()
+        {
+            int duplicatesRemoved = 0;
+            Node current = Head;
+            while (current != null)
+            {
+                Node nextItem = current;
+                while (nextItem.Next != null)
+                {
+                    if (nextItem.Next.Data == current.Data)
+                    {
+                        nextItem.Next = nextItem.Next.Next;
+                        duplicatesRemoved++;
+                    }
+                    else
+                    {
+                        nextItem = nextItem.Next;
+                    }
+                }
+                current = current.Next;
+            }
+            return duplicatesRemoved;
+        }
     }
 }

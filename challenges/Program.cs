@@ -23,20 +23,36 @@ namespace challenges
 
 
             //Linked List 
+            //Linked_List myList = new Linked_List();
+            //myList.AddFirst(1);
+            //myList.AddFirst(2);
+            //myList.AddFirst(3);
+            //myList.AddEnd(4);
+            //Console.WriteLine("Searching for not found item (5):");
+            //myList.Include(5);
+            //Console.WriteLine("Searching for (4):");
+            //myList.Include(4);
+            //Console.WriteLine("The List Before Remove (1):");
+            //myList.PrintList();
+            //myList.Remove(1);
+            //Console.WriteLine();
+            //Console.WriteLine("The List After Remove (1):");
+            //myList.PrintList();
+
+
+            //Linked - List - Remove - Duplicates
+
             Linked_List myList = new Linked_List();
             myList.AddFirst(1);
+            myList.AddFirst(4);
             myList.AddFirst(2);
             myList.AddFirst(3);
             myList.AddEnd(4);
-            Console.WriteLine("Searching for not found item (5):");
-            myList.Include(5);
-            Console.WriteLine("Searching for (4):");
-            myList.Include(4);
-            Console.WriteLine("The List Before Remove (1):");
+            Console.WriteLine($"Print Array Before Remove Duplicates");
             myList.PrintList();
-            myList.Remove(1);
-            Console.WriteLine();
-            Console.WriteLine("The List After Remove (1):");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("Array After Remove Duplicates ");
+            myList.RemoveDuplicate();
             myList.PrintList();
         }
 
