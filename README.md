@@ -67,3 +67,11 @@ A function called ReverseWords returns a string with the words in reverse order.
 [CC07-B whiteboard](challenges/whiteboard-challenges/LinkedListRemoveDuplicates.png "Visit CC07")
 
 [CC07-B Output](challenges/Data-Structures/LinkedList/RemoveDuplicates/LinkedListDuplicatesOutput.png "Visit CC07/output")
+
+- MergeSortedLists Method: This method takes two sorted linked lists as inputs and merges them into a single sorted linked list. It uses two pointers to traverse both lists, compares the node values, and appends the smaller node to the merged list. It handles cases where one or both lists are empty, and ensures the resulting list is sorted.
+
+[CC08 whiteboard](challenges/whiteboard-challenges/MergeSorted.png "Visit CC08")
+
+[CC08 Output](challenges/Data-Structures/LinkedList/MergeSorted/MergeSortedOutput.png "Visit CC08/output")
+
+[CC08 Test](MergeSortedLinkedListsTest/UnitTest1.cs)

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Data-Structures\LinkedList\RemoveDuplicates\" />
+    <Folder Include="Data-Structures\MergeSorted\" />
     <Folder Include="whiteboard-challenges\" />
   </ItemGroup>
 

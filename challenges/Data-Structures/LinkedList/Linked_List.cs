@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace challenges.Data_Structures.LinkedList
 {
@@ -10,6 +6,7 @@ namespace challenges.Data_Structures.LinkedList
     {
         public Node Head { get; set; }
         public Node Tail { get; set; }
+
         public Linked_List()
         {
             Head = null;
@@ -23,7 +20,6 @@ namespace challenges.Data_Structures.LinkedList
             {
                 Head = item;
                 Tail = item;
-
             }
             else
             {
@@ -31,6 +27,7 @@ namespace challenges.Data_Structures.LinkedList
                 Tail = item;
             }
         }
+
         public void AddFirst(int value)
         {
             Node item = new Node(value);
@@ -44,8 +41,8 @@ namespace challenges.Data_Structures.LinkedList
                 item.Next = Head;
                 Head = item;
             }
-
         }
+
         public int PrintList()
         {
             Node Start = Head;
@@ -66,6 +63,7 @@ namespace challenges.Data_Structures.LinkedList
                 return count;
             }
         }
+
         public bool Include(int value)
         {
             Node current = Head;
@@ -85,6 +83,7 @@ namespace challenges.Data_Structures.LinkedList
 
             return false;
         }
+
         public void Remove(int value)
         {
             if (Head == null)
@@ -93,7 +92,6 @@ namespace challenges.Data_Structures.LinkedList
                 return;
             }
 
-            
             if (Head.Data == value)
             {
                 Head = Head.Next;
@@ -104,7 +102,6 @@ namespace challenges.Data_Structures.LinkedList
                 return;
             }
 
-           
             Node previous = Head;
             Node current = Head.Next;
             while (current != null)
@@ -112,7 +109,7 @@ namespace challenges.Data_Structures.LinkedList
                 if (current.Data == value)
                 {
                     previous.Next = current.Next;
-                   
+
                     if (current.Next == null)
                     {
                         Tail = previous;
@@ -123,13 +120,11 @@ namespace challenges.Data_Structures.LinkedList
                 current = current.Next;
             }
 
-          
             if (current == null)
             {
                 Console.WriteLine("Element Not Found");
             }
         }
-
 
         public int RemoveDuplicate()
         {
@@ -153,6 +148,44 @@ namespace challenges.Data_Structures.LinkedList
                 current = current.Next;
             }
             return duplicatesRemoved;
+        }
+
+        public static Linked_List MergeSortedLists(Linked_List list1, Linked_List list2)
+        {
+            if (list1.Head == null) return list2;
+            if (list2.Head == null) return list1;
+
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+            Linked_List mergedList = new Linked_List();
+
+            while (current1 != null && current2 != null)
+            {
+                if (current1.Data <= current2.Data)
+                {
+                    mergedList.AddEnd(current1.Data);
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    mergedList.AddEnd(current2.Data);
+                    current2 = current2.Next;
+                }
+            }
+
+            while (current1 != null)
+            {
+                mergedList.AddEnd(current1.Data);
+                current1 = current1.Next;
+            }
+
+            while (current2 != null)
+            {
+                mergedList.AddEnd(current2.Data);
+                current2 = current2.Next;
+            }
+
+            return mergedList;
         }
     }
 }

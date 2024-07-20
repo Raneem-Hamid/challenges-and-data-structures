@@ -42,18 +42,41 @@ namespace challenges
 
             //Linked - List - Remove - Duplicates
 
-            Linked_List myList = new Linked_List();
-            myList.AddFirst(1);
-            myList.AddFirst(4);
-            myList.AddFirst(2);
-            myList.AddFirst(3);
-            myList.AddEnd(4);
-            Console.WriteLine($"Print Array Before Remove Duplicates");
-            myList.PrintList();
-            Console.WriteLine("----------------------------------------");
-            Console.WriteLine("Array After Remove Duplicates ");
-            myList.RemoveDuplicate();
-            myList.PrintList();
+            //Linked_List myList = new Linked_List();
+            //myList.AddFirst(1);
+            //myList.AddFirst(4);
+            //myList.AddFirst(2);
+            //myList.AddFirst(3);
+            //myList.AddEnd(4);
+            //Console.WriteLine($"Print Array Before Remove Duplicates");
+            //myList.PrintList();
+            //Console.WriteLine("----------------------------------------");
+            //Console.WriteLine("Array After Remove Duplicates ");
+            //myList.RemoveDuplicate();
+            //myList.PrintList();
+
+            // Merge Sorted Linked Lists
+            Linked_List list1 = new Linked_List();
+            list1.AddEnd(1);
+            list1.AddEnd(3);
+            list1.AddEnd(5);
+
+            Linked_List list2 = new Linked_List();
+            list2.AddEnd(2);
+            list2.AddEnd(4);
+            list2.AddEnd(6);
+
+            Linked_List mergedList = Linked_List.MergeSortedLists(list1, list2);
+
+            Console.WriteLine("Merged List:");
+            Node current = mergedList.Head;
+            while (current != null)
+            {
+                Console.WriteLine(current.Data);
+                current = current.Next;
+            }
+
+
         }
 
     }
