@@ -52,8 +52,10 @@ A function called ReverseWords returns a string with the words in reverse order.
 
 [CC06-B Output](challenges/Reverse-Words/ReverseWordsOutput.png "Visit CC06-B/output")
 
+## Data Structure 
 
-## Challenge 07: Linked List 
+
+### Linked List 
 
 - Linked_List Class: Implements a singly linked list with methods to add, remove, print elements, and check for inclusion. 
 
@@ -75,3 +77,47 @@ A function called ReverseWords returns a string with the words in reverse order.
 [CC08 Output](challenges/Data-Structures/LinkedList/MergeSorted/MergeSortedOutput.png "Visit CC08/output")
 
 [CC08 Test](MergeSortedLinkedListsTest/UnitTest1.cs)
+
+### Stack and Queue Implementation
+
+#### Stack Implementation
+
+##### Stack Class
+
+###### Push Method
+This method adds a node with the specified data to the top of the stack. It creates a new node, sets its next reference to the current top, and updates the top to the new node.
+
+###### Pop Method
+This method removes and returns the top node from the stack. It checks if the stack is empty, throws an exception if it is, stores the top data, updates the top to the next node, and returns the stored data.
+
+###### Peek Method
+This method returns the top node from the stack without removing it. It checks if the stack is empty, throws an exception if it is, and returns the top data.
+
+###### IsEmpty Method
+This method checks if the stack is empty by returning whether the top is null.
+
+
+#### Queue Implementation
+
+##### Queue Class
+
+###### Enqueue Method
+This method adds a node with the specified data to the end of the queue. It creates a new node, sets it as both the front and back if the queue is empty, or appends it to the back and updates the back.
+
+###### Dequeue Method
+This method removes and returns the front node from the queue. It checks if the queue is empty, throws an exception if it is, stores the front data, updates the front to the next node, sets the back to null if the front becomes null, and returns the stored data.
+
+###### Peek Method
+This method returns the front node from the queue without removing it. It checks if the queue is empty, throws an exception if it is, and returns the front data.
+
+###### IsEmpty Method
+This method checks if the queue is empty by returning whether the front is null.
+
+
+[whiteboard](challenges/whiteboard-challenges/StackandQueueImplementation.png "Visit CC09")
+
+[Output](challenges/Data-Structures/StackandQueue/StackandQueueOutput.png "Visit CC09/output")
+
+[Test](StackandQueueTest/UnitTest1.cs)
+
+
