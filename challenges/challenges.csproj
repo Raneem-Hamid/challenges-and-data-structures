@@ -8,8 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data-Structures\MergeSorted\**" />
+    <EmbeddedResource Remove="Data-Structures\MergeSorted\**" />
+    <None Remove="Data-Structures\MergeSorted\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data-Structures\LinkedList\RemoveDuplicates\" />
-    <Folder Include="Data-Structures\MergeSorted\" />
     <Folder Include="whiteboard-challenges\" />
   </ItemGroup>
 
