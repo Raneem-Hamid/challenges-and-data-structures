@@ -1,5 +1,6 @@
 ﻿using challenges.Data_Structures.LinkedList;
 using challenges.Data_Structures.StackandQueue;
+using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Reverse_Words;
 
 namespace challenges
@@ -78,29 +79,49 @@ namespace challenges
             //}
 
             //Stack
-            Console.WriteLine("Data structure : Stack ");
-            StructureAsStack stack = new StructureAsStack();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
-            stack.Push(5);
-            Console.WriteLine(" The top value before using pop method : " + stack.Peek());
-            stack.Pop();
-            Console.WriteLine(" The top value after using pop method : " + stack.Peek());
+            //Console.WriteLine("Data structure : Stack ");
+            //StructureAsStack stack = new StructureAsStack();
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+            //stack.Push(5);
+            //Console.WriteLine(" The top value before using pop method : " + stack.Peek());
+            //stack.Pop();
+            //Console.WriteLine(" The top value after using pop method : " + stack.Peek());
             //Queue
-            Console.WriteLine("Data structure : Queue ");
-            StructureAsQueue queue = new StructureAsQueue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(4);
-            queue.Enqueue(5);
-            Console.WriteLine(" The first value before using Dequeue method : " + queue.Peek());
-            queue.Dequeue();
-            Console.WriteLine(" The first value after using Dequeue method : " + queue.Peek());
+            //Console.WriteLine("Data structure : Queue ");
+            //StructureAsQueue queue = new StructureAsQueue();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
+            //queue.Enqueue(5);
+            //Console.WriteLine(" The first value before using Dequeue method : " + queue.Peek());
+            //queue.Dequeue();
+            //Console.WriteLine(" The first value after using Dequeue method : " + queue.Peek());
 
 
+            //Reverse stack using Queue
+            Console.WriteLine("Reverse stack using Queue");
+            StackWithReverse stackWithReverse = new StackWithReverse();
+            stackWithReverse.Push(1);
+            stackWithReverse.Push(2);
+            stackWithReverse.Push(3);
+            stackWithReverse.Push(4);
+            stackWithReverse.Push(5);
+
+            Console.WriteLine(" The top value before using reverse method : " + stackWithReverse.Peek());
+
+            stackWithReverse.ReverseStack();
+            Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
+
+            stackWithReverse.Push(6);
+            stackWithReverse.Push(7);
+
+            Console.WriteLine(" The top value after adding 6 then 7 : " + stackWithReverse.Peek());
+            stackWithReverse.ReverseStack();
+            Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
         }
 
     }
