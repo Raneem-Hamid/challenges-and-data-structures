@@ -120,4 +120,12 @@ This method checks if the queue is empty by returning whether the front is null.
 
 [Test](StackandQueueTest/UnitTest1.cs)
 
+#### Reverse Stack Using Queue
+A function called `ReverseStack` that takes in a stack and reverses its elements using a queue.
+
+[CC10 whiteboard](challenges/whiteboard-challenges/ReverseaStackUsingQueue.png "Visit CC10")
+
+[CC10 Output](challenges/Data-Structures/StackandQueue/ReverseStackUsingQueue/ReverseaStackUsingQueueOutput.png "Visit CC10/output")
+
+[Test](ReverseaStackusingQueueTest/UnitTest1.cs)
 

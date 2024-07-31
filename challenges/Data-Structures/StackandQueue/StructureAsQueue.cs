@@ -56,12 +56,7 @@ namespace challenges.Data_Structures.StackandQueue
 
         public bool IsEmpty()
         {
-            if (  back == null)
-            {
-                return true;
-            }
-
-            return false;
+            return front == null;
         }
 
     }
