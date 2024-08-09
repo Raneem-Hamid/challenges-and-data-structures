@@ -1,7 +1,9 @@
 ﻿using challenges.Data_Structures.LinkedList;
 using challenges.Data_Structures.StackandQueue;
+using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Reverse_Words;
+using System.Xml.Linq;
 
 namespace challenges
 {
@@ -103,25 +105,62 @@ namespace challenges
 
 
             //Reverse stack using Queue
-            Console.WriteLine("Reverse stack using Queue");
-            StackWithReverse stackWithReverse = new StackWithReverse();
-            stackWithReverse.Push(1);
-            stackWithReverse.Push(2);
-            stackWithReverse.Push(3);
-            stackWithReverse.Push(4);
-            stackWithReverse.Push(5);
+            //Console.WriteLine("Reverse stack using Queue");
+            //StackWithReverse stackWithReverse = new StackWithReverse();
+            //stackWithReverse.Push(1);
+            //stackWithReverse.Push(2);
+            //stackWithReverse.Push(3);
+            //stackWithReverse.Push(4);
+            //stackWithReverse.Push(5);
 
-            Console.WriteLine(" The top value before using reverse method : " + stackWithReverse.Peek());
+            //Console.WriteLine(" The top value before using reverse method : " + stackWithReverse.Peek());
 
-            stackWithReverse.ReverseStack();
-            Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
+            //stackWithReverse.ReverseStack();
+            //Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
 
-            stackWithReverse.Push(6);
-            stackWithReverse.Push(7);
+            //stackWithReverse.Push(6);
+            //stackWithReverse.Push(7);
 
-            Console.WriteLine(" The top value after adding 6 then 7 : " + stackWithReverse.Peek());
-            stackWithReverse.ReverseStack();
-            Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
+            //Console.WriteLine(" The top value after adding 6 then 7 : " + stackWithReverse.Peek());
+            //stackWithReverse.ReverseStack();
+            //Console.WriteLine(" The top value after using reverse method : " + stackWithReverse.Peek());
+
+
+
+
+           // Delete Middle Element of a Stack
+
+            var oddstack = new StackWithDeleteMiddle();
+            oddstack.Push(1);
+            oddstack.Push(2);
+            oddstack.Push(3);
+            oddstack.Push(4);
+            oddstack.Push(5);
+
+            Console.WriteLine("Odd Stack before deleting middle element:");
+            oddstack.PrintStack();
+
+            oddstack.DeleteMiddle();
+
+            Console.WriteLine("Odd Stack after deleting middle element:");
+            oddstack.PrintStack();
+
+
+            var evenstack = new StackWithDeleteMiddle();
+            evenstack.Push(1);
+            evenstack.Push(2);
+            evenstack.Push(3);
+            evenstack.Push(4);
+          
+
+            Console.WriteLine("Even Stack before deleting middle element:");
+            evenstack.PrintStack();
+
+            evenstack.DeleteMiddle();
+
+            Console.WriteLine("Even Stack after deleting middle element:");
+            evenstack.PrintStack();
+
         }
 
     }
