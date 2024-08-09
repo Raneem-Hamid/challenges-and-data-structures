@@ -1,6 +1,7 @@
 ﻿using challenges.Data_Structures.LinkedList;
 using challenges.Data_Structures.StackandQueue;
 using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
+using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Reverse_Words;
 using System.Xml.Linq;
@@ -128,38 +129,61 @@ namespace challenges
 
 
 
-           // Delete Middle Element of a Stack
+            // Delete Middle Element of a Stack
 
-            var oddstack = new StackWithDeleteMiddle();
-            oddstack.Push(1);
-            oddstack.Push(2);
-            oddstack.Push(3);
-            oddstack.Push(4);
-            oddstack.Push(5);
+            //var oddstack = new StackWithDeleteMiddle();
+            //oddstack.Push(1);
+            //oddstack.Push(2);
+            //oddstack.Push(3);
+            //oddstack.Push(4);
+            //oddstack.Push(5);
 
-            Console.WriteLine("Odd Stack before deleting middle element:");
-            oddstack.PrintStack();
+            //Console.WriteLine("Odd Stack before deleting middle element:");
+            //oddstack.PrintStack();
 
-            oddstack.DeleteMiddle();
+            //oddstack.DeleteMiddle();
 
-            Console.WriteLine("Odd Stack after deleting middle element:");
-            oddstack.PrintStack();
+            //Console.WriteLine("Odd Stack after deleting middle element:");
+            //oddstack.PrintStack();
 
 
-            var evenstack = new StackWithDeleteMiddle();
-            evenstack.Push(1);
-            evenstack.Push(2);
-            evenstack.Push(3);
-            evenstack.Push(4);
-          
+            //var evenstack = new StackWithDeleteMiddle();
+            //evenstack.Push(1);
+            //evenstack.Push(2);
+            //evenstack.Push(3);
+            //evenstack.Push(4);
 
-            Console.WriteLine("Even Stack before deleting middle element:");
-            evenstack.PrintStack();
 
-            evenstack.DeleteMiddle();
+            //Console.WriteLine("Even Stack before deleting middle element:");
+            //evenstack.PrintStack();
 
-            Console.WriteLine("Even Stack after deleting middle element:");
-            evenstack.PrintStack();
+            //evenstack.DeleteMiddle();
+
+            //Console.WriteLine("Even Stack after deleting middle element:");
+            //evenstack.PrintStack();
+
+            //min stack
+
+            var stack = new MinStack();
+            stack.Push(15);
+            stack.Push(7);
+            stack.Push(12);
+            stack.Push(3);
+            Console.WriteLine("Print the contents of the stack :");
+            stack.PrintStack();
+            Console.WriteLine("The minimum element in the stack : " + stack.GetMin()); 
+            stack.Pop();
+            Console.WriteLine("Print the contents of the stack after using pop method :");
+            stack.PrintStack();
+            Console.WriteLine("The minimum element in the stack : " + stack.GetMin());
+            stack.Push(2);
+            Console.WriteLine("The minimum element in the stack after pushing (2) : " + stack.GetMin());
+            stack.Pop();
+            stack.Pop();
+            stack.Pop();
+            stack.Pop();
+            Console.WriteLine(stack.GetMin());
+
 
         }
 
