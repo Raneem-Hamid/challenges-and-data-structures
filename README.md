@@ -123,9 +123,18 @@ This method checks if the queue is empty by returning whether the front is null.
 #### Reverse Stack Using Queue
 A function called `ReverseStack` that takes in a stack and reverses its elements using a queue.
 
-[CC10 whiteboard](challenges/whiteboard-challenges/ReverseaStackUsingQueue.png "Visit CC10")
+[whiteboard](challenges/whiteboard-challenges/ReverseaStackUsingQueue.png "Visit CC10")
 
-[CC10 Output](challenges/Data-Structures/StackandQueue/ReverseStackUsingQueue/ReverseaStackUsingQueueOutput.png "Visit CC10/output")
+[Output](challenges/Data-Structures/StackandQueue/ReverseStackUsingQueue/ReverseaStackUsingQueueOutput.png "Visit CC10/output")
 
 [Test](ReverseaStackusingQueueTest/UnitTest1.cs)
 
+#### Delete Middle Element of a Stack
+A method called `DeleteMiddle` that takes in a stack and removes the middle element. If the stack has an even number of elements, it removes the lower middle element. The stack should remain in the correct order after the middle element is removed.
+
+  
+[whiteboard](challenges/whiteboard-challenges/DeleteMiddleElementofaStack.png "Visit CC11")
+
+[Output](challenges/Data-Structures/StackandQueue/DeleteMiddleElement/DeleteMiddleElementofaStackOutput.png "Visit CC11/output")
+
+[Test](DeleteMiddleElementofaStackTest/UnitTest1.cs)

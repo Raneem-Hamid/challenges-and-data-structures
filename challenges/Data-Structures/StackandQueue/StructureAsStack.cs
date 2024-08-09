@@ -53,5 +53,33 @@ namespace challenges.Data_Structures.StackandQueue
 
             return false;
         }
+
+        public int Count()
+        {
+            int count = 0;
+            Node current = top;
+            while (current != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
+        }
+
+        public void PrintStack()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("Stack is empty.");
+                return;
+            }
+
+            Node current = top;
+            while (current != null)
+            {
+                Console.WriteLine(current.Data);
+                current = current.Next;
+            }
+        }
     }
 }
