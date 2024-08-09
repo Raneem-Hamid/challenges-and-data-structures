@@ -139,7 +139,7 @@ A method called `DeleteMiddle` that takes in a stack and removes the middle elem
 
 [Test](DeleteMiddleElementofaStackTest/UnitTest1.cs)
 
-#### Delete Middle Element of a Stack
+#### Min Stack Challenge
 A method `GetMin` that retrieves the minimum element in stack .
   
 [whiteboard](challenges/whiteboard-challenges/MinStack.png "Visit CC11")
