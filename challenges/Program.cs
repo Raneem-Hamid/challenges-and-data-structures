@@ -3,6 +3,7 @@ using challenges.Data_Structures.StackandQueue;
 using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
 using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
+using challenges.Data_Structures.Trees;
 using challenges.Reverse_Words;
 using System.Xml.Linq;
 
@@ -164,26 +165,52 @@ namespace challenges
 
             //min stack
 
-            var stack = new MinStack();
-            stack.Push(15);
-            stack.Push(7);
-            stack.Push(12);
-            stack.Push(3);
-            Console.WriteLine("Print the contents of the stack :");
-            stack.PrintStack();
-            Console.WriteLine("The minimum element in the stack : " + stack.GetMin()); 
-            stack.Pop();
-            Console.WriteLine("Print the contents of the stack after using pop method :");
-            stack.PrintStack();
-            Console.WriteLine("The minimum element in the stack : " + stack.GetMin());
-            stack.Push(2);
-            Console.WriteLine("The minimum element in the stack after pushing (2) : " + stack.GetMin());
-            stack.Pop();
-            stack.Pop();
-            stack.Pop();
-            stack.Pop();
-            Console.WriteLine(stack.GetMin());
+            //var stack = new MinStack();
+            //stack.Push(15);
+            //stack.Push(7);
+            //stack.Push(12);
+            //stack.Push(3);
+            //Console.WriteLine("Print the contents of the stack :");
+            //stack.PrintStack();
+            //Console.WriteLine("The minimum element in the stack : " + stack.GetMin()); 
+            //stack.Pop();
+            //Console.WriteLine("Print the contents of the stack after using pop method :");
+            //stack.PrintStack();
+            //Console.WriteLine("The minimum element in the stack : " + stack.GetMin());
+            //stack.Push(2);
+            //Console.WriteLine("The minimum element in the stack after pushing (2) : " + stack.GetMin());
+            //stack.Pop();
+            //stack.Pop();
+            //stack.Pop();
+            //stack.Pop();
+            //Console.WriteLine(stack.GetMin());
 
+
+            // Tree implementation
+            BinaryTree tree = new BinaryTree();
+            tree.Add(15);
+            tree.Add(10);
+            tree.Add(20);
+            tree.Add(8);
+            tree.Add(12);
+            tree.Add(17);
+            tree.Add(25);
+            Console.WriteLine("\nTree Structure:");
+            tree.Print(tree.Root);
+            Console.WriteLine("Contains 12: " + tree.Contains(12));  
+            Console.WriteLine("Contains 30: " + tree.Contains(30));
+            Console.WriteLine("\nRemoving 10...");
+            tree.Remove(10);
+            Console.WriteLine("\nTree Structure after Removing 10:");
+            tree.Print(tree.Root);     
+            Console.WriteLine("\nPreOrder Traversal:");
+            tree.PreOrder(tree.Root);  
+            Console.WriteLine("\nInOrder Traversal:");
+            tree.InOrder(tree.Root);   
+            Console.WriteLine("\nPostOrder Traversal:");
+            tree.PostOrder(tree.Root); 
+
+            
 
         }
 

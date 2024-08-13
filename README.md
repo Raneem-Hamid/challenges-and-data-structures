@@ -149,4 +149,40 @@ A method `GetMin` that retrieves the minimum element in stack .
 [Test](MinStackTest/UnitTest1.cs)
 
 
+### Tree Implementation
+
+#### **Binary Tree**
+
+##### **BinaryTree Class**
+
+###### **PreOrder Method**
+This method performs a pre-order traversal of the binary tree. It processes the current node first, then recursively traverses the left subtree, followed by the right subtree.
+
+###### **InOrder Method**
+This method performs an in-order traversal of the binary tree. It recursively traverses the left subtree, processes the current node, and then traverses the right subtree.
+
+###### **PostOrder Method**
+This method performs a post-order traversal of the binary tree. It recursively traverses the left subtree, then the right subtree, and finally processes the current node.
+
+###### **Print Method**
+This method prints the binary tree in a structured format, showing the hierarchy of nodes with indentation to indicate levels and branches.
+
+#### **Binary Search Tree**
+
+##### **BinarySearchTree Class**
+
+###### **Add Method**
+This method adds a node with the specified data to the binary search tree while maintaining the BST properties. It inserts the new node in the correct location based on its value.
+
+###### **Contains Method**
+This method checks whether a node with the specified data exists in the binary search tree. It returns `true` if the node is found, otherwise `false`.
+
+###### **Remove Method**
+This method removes a node with the specified data from the binary search tree while maintaining the BST properties. It handles nodes with no children, one child, or two children.
+
+[whiteboard](challenges/whiteboard-challenges/TreeImplementation.png "Visit CC11")
+
+[Output](challenges/Data-Structures/Trees/TreeImplementationOutput.png "Visit CC11/output")
+
+[Test](TreeImplementationTest/UnitTest1.cs)
 
