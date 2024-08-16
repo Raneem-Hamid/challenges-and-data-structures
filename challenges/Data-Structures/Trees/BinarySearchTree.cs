@@ -26,7 +26,7 @@ namespace challenges.Data_Structures.Trees
             }
         }
 
-        public void AddingProcess(TNode node, int data)
+        private void AddingProcess(TNode node, int data)
         {
             if (data > node.Data)
             {
@@ -59,7 +59,7 @@ namespace challenges.Data_Structures.Trees
             return IfContains(Root,data);
         }
 
-        public bool IfContains(TNode node, int data) 
+        private bool IfContains(TNode node, int data) 
         {
             if (node == null)
                 return false;
@@ -93,7 +93,7 @@ namespace challenges.Data_Structures.Trees
             Root = RemovingProcess(Root, data);
         }
 
-        public TNode RemovingProcess (TNode node , int data)
+        private TNode RemovingProcess (TNode node , int data)
         {
 
             if (node == null)
@@ -127,7 +127,7 @@ namespace challenges.Data_Structures.Trees
 
         }
 
-        public int MinValue(TNode node)
+        private int MinValue(TNode node)
         {
             int minValue = node.Data;
             while (node.Left != null)

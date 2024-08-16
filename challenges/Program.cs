@@ -4,6 +4,7 @@ using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
 using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Data_Structures.Trees;
+using challenges.Data_Structures.Trees.MirrorTree;
 using challenges.Reverse_Words;
 using System.Xml.Linq;
 
@@ -187,30 +188,53 @@ namespace challenges
 
 
             // Tree implementation
-            BinaryTree tree = new BinaryTree();
-            tree.Add(15);
-            tree.Add(10);
-            tree.Add(20);
-            tree.Add(8);
-            tree.Add(12);
-            tree.Add(17);
-            tree.Add(25);
-            Console.WriteLine("\nTree Structure:");
-            tree.Print(tree.Root);
-            Console.WriteLine("Contains 12: " + tree.Contains(12));  
-            Console.WriteLine("Contains 30: " + tree.Contains(30));
-            Console.WriteLine("\nRemoving 10...");
-            tree.Remove(10);
-            Console.WriteLine("\nTree Structure after Removing 10:");
-            tree.Print(tree.Root);     
-            Console.WriteLine("\nPreOrder Traversal:");
-            tree.PreOrder(tree.Root);  
-            Console.WriteLine("\nInOrder Traversal:");
-            tree.InOrder(tree.Root);   
-            Console.WriteLine("\nPostOrder Traversal:");
-            tree.PostOrder(tree.Root); 
+            //BinaryTree tree = new BinaryTree();
+            //tree.Add(15);
+            //tree.Add(10);
+            //tree.Add(20);
+            //tree.Add(8);
+            //tree.Add(12);
+            //tree.Add(17);
+            //tree.Add(25);
+            //Console.WriteLine("\nTree Structure:");
+            //tree.Print(tree.Root);
+            //Console.WriteLine("Contains 12: " + tree.Contains(12));  
+            //Console.WriteLine("Contains 30: " + tree.Contains(30));
+            //Console.WriteLine("\nRemoving 10...");
+            //tree.Remove(10);
+            //Console.WriteLine("\nTree Structure after Removing 10:");
+            //tree.Print(tree.Root);     
+            //Console.WriteLine("\nPreOrder Traversal:");
+            //tree.PreOrder(tree.Root);  
+            //Console.WriteLine("\nInOrder Traversal:");
+            //tree.InOrder(tree.Root);   
+            //Console.WriteLine("\nPostOrder Traversal:");
+            //tree.PostOrder(tree.Root); 
 
+            //Mirror Tree
+
+            MirrorTree tree = new MirrorTree();
+            tree.Add(4);
+            tree.Add(8);
+            tree.Add(7);
+            tree.Add(12);
+            tree.Add(9);
+            Console.WriteLine("\nTree Structure before using mirror method:");
+            tree.Print(tree.Root);
             
+            List<int> originalInorder = tree.InorderTraversal();
+
+
+            Console.WriteLine("Inorder Traversal before using mirror method : " + string.Join(", ", originalInorder));
+
+            tree.Mirror();
+
+            Console.WriteLine("\nTree Structure after using mirror method:");
+            tree.Print(tree.Root);
+            List<int> mirroredInorder = tree.InorderTraversal();
+            Console.WriteLine("Inorder Traversal after using mirror method : " + string.Join(", ", mirroredInorder));
+
+
 
         }
 

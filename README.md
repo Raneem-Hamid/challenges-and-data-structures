@@ -151,9 +151,8 @@ A method `GetMin` that retrieves the minimum element in stack .
 
 ### Tree Implementation
 
-#### **Binary Tree**
+#### **Binary Tree Class**
 
-##### **BinaryTree Class**
 
 ###### **PreOrder Method**
 This method performs a pre-order traversal of the binary tree. It processes the current node first, then recursively traverses the left subtree, followed by the right subtree.
@@ -167,9 +166,7 @@ This method performs a post-order traversal of the binary tree. It recursively t
 ###### **Print Method**
 This method prints the binary tree in a structured format, showing the hierarchy of nodes with indentation to indicate levels and branches.
 
-#### **Binary Search Tree**
-
-##### **BinarySearchTree Class**
+#### **Binary Search Tree Class**
 
 ###### **Add Method**
 This method adds a node with the specified data to the binary search tree while maintaining the BST properties. It inserts the new node in the correct location based on its value.
@@ -185,4 +182,14 @@ This method removes a node with the specified data from the binary search tree w
 [Output](challenges/Data-Structures/Trees/TreeImplementationOutput.png "Visit CC11/output")
 
 [Test](TreeImplementationTest/UnitTest1.cs)
+
+#### Mirror Tree Challenge
+A method `Mirror()` that converts a binary tree into its mirror image, where the left and right children of all nodes are swapped.
+
+[**Whiteboard**](challenges/whiteboard-challenges/MirrorTree.png "Visit Mirror Tree Whiteboard")
+
+[**Output**](challenges/Data-Structures/Trees/MirrorTree/MirrorTreeOutput.png "Visit Mirror Tree Output")
+
+[**Test**](MirrorTreeTest/UnitTest1.cs)
+
 
