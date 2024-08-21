@@ -5,6 +5,7 @@ using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Data_Structures.Trees;
 using challenges.Data_Structures.Trees.MirrorTree;
+using challenges.Data_Structures.Trees.SecondMaxValue;
 using challenges.Reverse_Words;
 using System.Xml.Linq;
 
@@ -213,26 +214,42 @@ namespace challenges
 
             //Mirror Tree
 
-            MirrorTree tree = new MirrorTree();
+            //MirrorTree tree = new MirrorTree();
+            //tree.Add(4);
+            //tree.Add(8);
+            //tree.Add(7);
+            //tree.Add(12);
+            //tree.Add(9);
+            //Console.WriteLine("\nTree Structure before using mirror method:");
+            //tree.Print(tree.Root);
+            
+            //List<int> originalInorder = tree.InorderTraversal();
+
+
+            //Console.WriteLine("Inorder Traversal before using mirror method : " + string.Join(", ", originalInorder));
+
+            //tree.Mirror();
+
+            //Console.WriteLine("\nTree Structure after using mirror method:");
+            //tree.Print(tree.Root);
+            //List<int> mirroredInorder = tree.InorderTraversal();
+            //Console.WriteLine("Inorder Traversal after using mirror method : " + string.Join(", ", mirroredInorder));
+
+
+
+            //SecondMaxValue
+
+            SecondMaxValue tree = new SecondMaxValue();
+
             tree.Add(4);
             tree.Add(8);
             tree.Add(7);
             tree.Add(12);
             tree.Add(9);
-            Console.WriteLine("\nTree Structure before using mirror method:");
-            tree.Print(tree.Root);
-            
-            List<int> originalInorder = tree.InorderTraversal();
+            tree.Add(13);
+            Console.WriteLine("The Second Max Value IS : " + tree.GetSecondMax());
 
 
-            Console.WriteLine("Inorder Traversal before using mirror method : " + string.Join(", ", originalInorder));
-
-            tree.Mirror();
-
-            Console.WriteLine("\nTree Structure after using mirror method:");
-            tree.Print(tree.Root);
-            List<int> mirroredInorder = tree.InorderTraversal();
-            Console.WriteLine("Inorder Traversal after using mirror method : " + string.Join(", ", mirroredInorder));
 
 
 

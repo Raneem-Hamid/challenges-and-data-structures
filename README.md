@@ -193,3 +193,9 @@ A method `Mirror()` that converts a binary tree into its mirror image, where the
 [**Test**](MirrorTreeTest/UnitTest1.cs)
 
 
+#### Second Maximum Value Challenge  
+A method `FindSecondMax` that finds the second maximum value in a binary search tree. It starts by finding the rightmost node (maximum value) and then determines the second maximum based on the presence of a left subtree or by the parent node.  
+[**Whiteboard**](challenges/whiteboard-challenges/SecondMaximumValue.png "Visit Second Max Value Whiteboard")  
+[**Output**](challenges/Data-Structures/Trees/SecondMaxValue/SecondMaximumValueOutput.png "Visit Second Max Value Output")  
+[**Test**](SecondMaxValueTest/UnitTest1.cs)
+
