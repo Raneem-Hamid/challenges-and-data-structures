@@ -4,6 +4,7 @@ using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
 using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Data_Structures.Trees;
+using challenges.Data_Structures.Trees.LeafSum;
 using challenges.Data_Structures.Trees.MirrorTree;
 using challenges.Data_Structures.Trees.SecondMaxValue;
 using challenges.Reverse_Words;
@@ -239,20 +240,28 @@ namespace challenges
 
             //SecondMaxValue
 
-            SecondMaxValue tree = new SecondMaxValue();
+            //SecondMaxValue tree = new SecondMaxValue();
 
-            tree.Add(4);
-            tree.Add(8);
-            tree.Add(7);
+            //tree.Add(4);
+            //tree.Add(8);
+            //tree.Add(7);
+            //tree.Add(12);
+            //tree.Add(9);
+            //tree.Add(13);
+            //Console.WriteLine("The Second Max Value IS : " + tree.GetSecondMax());
+
+
+            //LeafSum
+
+            LeafSum tree = new LeafSum();
+            tree.Add(15);
+            tree.Add(10);
+            tree.Add(20);
+            tree.Add(25);
+            tree.Add(17);
             tree.Add(12);
-            tree.Add(9);
-            tree.Add(13);
-            Console.WriteLine("The Second Max Value IS : " + tree.GetSecondMax());
-
-
-
-
-
+            tree.Add(8);
+            Console.WriteLine("The total is : " + tree.GetLeafSum()); 
         }
 
     }
