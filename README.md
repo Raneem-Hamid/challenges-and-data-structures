@@ -199,3 +199,9 @@ A method `FindSecondMax` that finds the second maximum value in a binary search 
 [**Output**](challenges/Data-Structures/Trees/SecondMaxValue/SecondMaximumValueOutput.png "Visit Second Max Value Output")  
 [**Test**](SecondMaxValueTest/UnitTest1.cs)
 
+#### Sum of leaf Challenge  
+A method `GetLeafSum()` that calculate the sum of all leaf nodes in a binary search tree. A leaf node is a node that does not have any children ( both left and right children are null).
+[**Whiteboard**](challenges/whiteboard-challenges/Sumofleaf.png "Visit Sumofleaf Whiteboard")  
+[**Output**](challenges/Data-Structures/Trees/LeafSum/SumofleafOutPut.png "Visit Second SumofleafOutPut")  
+[**Test**](LeafSumTest/UnitTest1.cs)
+
