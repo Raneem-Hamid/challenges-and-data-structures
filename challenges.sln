@@ -34,7 +34,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MirrorTreeTest", "MirrorTre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondMaxValueTest", "SecondMaxValueTest\SecondMaxValueTest.csproj", "{62E5A0F6-4C0B-47D3-9825-0EA42869DEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeafSumTest", "LeafSumTest\LeafSumTest.csproj", "{913D6ED4-7FC7-4F75-95CB-67F54910D30D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeafSumTest", "LeafSumTest\LeafSumTest.csproj", "{913D6ED4-7FC7-4F75-95CB-67F54910D30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestLevelValueTest", "LargestLevelValueTest\LargestLevelValueTest.csproj", "{C7E91C3D-A794-454F-93C5-769F75C2632F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +100,10 @@ Global
 		{913D6ED4-7FC7-4F75-95CB-67F54910D30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{913D6ED4-7FC7-4F75-95CB-67F54910D30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{913D6ED4-7FC7-4F75-95CB-67F54910D30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

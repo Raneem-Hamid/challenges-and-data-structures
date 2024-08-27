@@ -4,6 +4,7 @@ using challenges.Data_Structures.StackandQueue.DeleteMiddleElement;
 using challenges.Data_Structures.StackandQueue.MinStack;
 using challenges.Data_Structures.StackandQueue.ReverseStackUsingQueue;
 using challenges.Data_Structures.Trees;
+using challenges.Data_Structures.Trees.LargestLevelValue;
 using challenges.Data_Structures.Trees.LeafSum;
 using challenges.Data_Structures.Trees.MirrorTree;
 using challenges.Data_Structures.Trees.SecondMaxValue;
@@ -223,7 +224,7 @@ namespace challenges
             //tree.Add(9);
             //Console.WriteLine("\nTree Structure before using mirror method:");
             //tree.Print(tree.Root);
-            
+
             //List<int> originalInorder = tree.InorderTraversal();
 
 
@@ -253,7 +254,19 @@ namespace challenges
 
             //LeafSum
 
-            LeafSum tree = new LeafSum();
+            //LeafSum tree = new LeafSum();
+            //tree.Add(15);
+            //tree.Add(10);
+            //tree.Add(20);
+            //tree.Add(25);
+            //tree.Add(17);
+            //tree.Add(12);
+            //tree.Add(8);
+            //Console.WriteLine("The total is : " + tree.GetLeafSum()); 
+
+            // LargestLevelValue
+
+            LargestLevelValue tree = new LargestLevelValue();
             tree.Add(15);
             tree.Add(10);
             tree.Add(20);
@@ -261,7 +274,14 @@ namespace challenges
             tree.Add(17);
             tree.Add(12);
             tree.Add(8);
-            Console.WriteLine("The total is : " + tree.GetLeafSum()); 
+
+            var largestValues = tree.GetLargestLevelValue();
+
+            Console.WriteLine("Largest values at each level:");
+            foreach (var value in largestValues)
+            {
+                Console.WriteLine(value);
+            }
         }
 
     }

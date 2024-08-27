@@ -205,3 +205,9 @@ A method `GetLeafSum()` that calculate the sum of all leaf nodes in a binary sea
 [**Output**](challenges/Data-Structures/Trees/LeafSum/SumofleafOutPut.png "Visit Second SumofleafOutPut")  
 [**Test**](LeafSumTest/UnitTest1.cs)
 
+#### Largest Value at Each Level 
+A method `GetLargestLevelValue()` that finds the largest value at each level of a binary search tree . This requires traversing the tree level by level and recording the maximum value encountered at each level.
+[**Whiteboard**](challenges/whiteboard-challenges/LargestValueatEachLevel.png "Visit Sumofleaf Whiteboard")  
+[**Output**](challenges/Data-Structures/Trees/LargestLevelValue/LargestValueatEachLevelOutput.png "Visit Second SumofleafOutPut")  
+[**Test**](LargestLevelValueTest/UnitTest1.cs)
+
