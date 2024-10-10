@@ -9,6 +9,7 @@ using challenges.Data_Structures.Trees.LeafSum;
 using challenges.Data_Structures.Trees.MirrorTree;
 using challenges.Data_Structures.Trees.SecondMaxValue;
 using challenges.Reverse_Words;
+using System.Collections.Generic;
 using System.Xml.Linq;
 
 namespace challenges
@@ -266,22 +267,44 @@ namespace challenges
 
             // LargestLevelValue
 
-            LargestLevelValue tree = new LargestLevelValue();
-            tree.Add(15);
-            tree.Add(10);
-            tree.Add(20);
-            tree.Add(25);
-            tree.Add(17);
-            tree.Add(12);
-            tree.Add(8);
+            //LargestLevelValue tree = new LargestLevelValue();
+            //tree.Add(15);
+            //tree.Add(10);
+            //tree.Add(20);
+            //tree.Add(25);
+            //tree.Add(17);
+            //tree.Add(12);
+            //tree.Add(8);
 
-            var largestValues = tree.GetLargestLevelValue();
+            //var largestValues = tree.GetLargestLevelValue();
 
-            Console.WriteLine("Largest values at each level:");
-            foreach (var value in largestValues)
-            {
-                Console.WriteLine(value);
-            }
+            //Console.WriteLine("Largest values at each level:");
+            //foreach (var value in largestValues)
+            //{
+            //    Console.WriteLine(value);
+            //}
+
+            //Rotate by k 
+            Linked_List list = new Linked_List();
+
+            // Add nodes to the linked list
+            list.AddFirst(1);
+            list.AddEnd(2);
+            list.AddEnd(3);
+            list.AddEnd(4);
+            list.AddEnd(5);
+            list.AddEnd(6);
+
+            Console.WriteLine("Original Linked List:");
+            list.PrintList();
+
+            // Rotate the linked list by k = 2
+            int k = 2;
+            Console.WriteLine($"\nRotating the list to the left by {k} positions...");
+            list.RotateLeft(k);
+
+            Console.WriteLine("\nRotated Linked List:");
+            list.PrintList();
         }
 
     }

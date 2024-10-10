@@ -36,7 +36,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondMaxValueTest", "Secon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeafSumTest", "LeafSumTest\LeafSumTest.csproj", "{913D6ED4-7FC7-4F75-95CB-67F54910D30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestLevelValueTest", "LargestLevelValueTest\LargestLevelValueTest.csproj", "{C7E91C3D-A794-454F-93C5-769F75C2632F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargestLevelValueTest", "LargestLevelValueTest\LargestLevelValueTest.csproj", "{C7E91C3D-A794-454F-93C5-769F75C2632F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateLinkedListTests", "RotateLinkedListTests\RotateLinkedListTests.csproj", "{4B25BC42-E52E-4674-85DC-B9FBF2542D02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,6 +106,10 @@ Global
 		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7E91C3D-A794-454F-93C5-769F75C2632F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B25BC42-E52E-4674-85DC-B9FBF2542D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B25BC42-E52E-4674-85DC-B9FBF2542D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B25BC42-E52E-4674-85DC-B9FBF2542D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B25BC42-E52E-4674-85DC-B9FBF2542D02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
