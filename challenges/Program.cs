@@ -10,6 +10,7 @@ using challenges.Data_Structures.Trees.MirrorTree;
 using challenges.Data_Structures.Trees.SecondMaxValue;
 using challenges.Reverse_Words;
 using System.Collections.Generic;
+using System.Reflection.Emit;
 using System.Xml.Linq;
 
 namespace challenges
@@ -306,24 +307,44 @@ namespace challenges
             //Console.WriteLine("\nRotated Linked List:");
             //list.PrintList();
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
             //PrintRightView
-            BinarySearchTree bst = new BinarySearchTree();
+            //BinarySearchTree bst = new BinarySearchTree();
 
-            
-            bst.Add(50);
-            bst.Add(30);
-            bst.Add(70);
-            bst.Add(20);
-            bst.Add(40);
-            bst.Add(60);
-            bst.Add(80);
 
-            
-            bst.PrintRightView();  
+            //bst.Add(50);
+            //bst.Add(30);
+            //bst.Add(70);
+            //bst.Add(20);
+            //bst.Add(40);
+            //bst.Add(60);
+            //bst.Add(80);
+
+
+            //bst.PrintRightView();  
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //Level with Maximum Number of Nodes
+
+            BinaryTree Btree = new BinaryTree();
+           
+            Btree.Add(50);
+            Btree.Add(30);
+            Btree.Add(70);
+            Btree.Add(20);
+            Btree.Add(40);
+            Btree.Add(60);
+            Btree.Add(80);
+
+
+            int maxLevel = Btree.FindMaxLevelNodes();
+            Console.WriteLine($"The level with the maximum number of nodes is: {maxLevel}"); 
+
         }
-
     }
 }
+
