@@ -285,26 +285,44 @@ namespace challenges
             //}
 
             //Rotate by k 
-            Linked_List list = new Linked_List();
+            //Linked_List list = new Linked_List();
 
-            // Add nodes to the linked list
-            list.AddFirst(1);
-            list.AddEnd(2);
-            list.AddEnd(3);
-            list.AddEnd(4);
-            list.AddEnd(5);
-            list.AddEnd(6);
+            //// Add nodes to the linked list
+            //list.AddFirst(1);
+            //list.AddEnd(2);
+            //list.AddEnd(3);
+            //list.AddEnd(4);
+            //list.AddEnd(5);
+            //list.AddEnd(6);
 
-            Console.WriteLine("Original Linked List:");
-            list.PrintList();
+            //Console.WriteLine("Original Linked List:");
+            //list.PrintList();
 
-            // Rotate the linked list by k = 2
-            int k = 2;
-            Console.WriteLine($"\nRotating the list to the left by {k} positions...");
-            list.RotateLeft(k);
+            //// Rotate the linked list by k = 2
+            //int k = 2;
+            //Console.WriteLine($"\nRotating the list to the left by {k} positions...");
+            //list.RotateLeft(k);
 
-            Console.WriteLine("\nRotated Linked List:");
-            list.PrintList();
+            //Console.WriteLine("\nRotated Linked List:");
+            //list.PrintList();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            //PrintRightView
+            BinarySearchTree bst = new BinarySearchTree();
+
+            
+            bst.Add(50);
+            bst.Add(30);
+            bst.Add(70);
+            bst.Add(20);
+            bst.Add(40);
+            bst.Add(60);
+            bst.Add(80);
+
+            
+            bst.PrintRightView();  
         }
 
     }

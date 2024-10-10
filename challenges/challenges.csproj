@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="Data-Structures\LinkedList\LinkedList-RotatebyK\" />
     <Folder Include="Data-Structures\LinkedList\RemoveDuplicates\" />
+    <Folder Include="Data-Structures\Trees\PrintRightView\" />
     <Folder Include="whiteboard-challenges\" />
   </ItemGroup>
 
