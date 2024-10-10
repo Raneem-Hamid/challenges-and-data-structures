@@ -230,3 +230,9 @@ A method `FindMaxLevelNodes()` to find and return the level in a binary tree tha
 [**Whiteboard**](challenges/whiteboard-challenges/LevelwithMaxNodes.png "Visit LevelwithMaxNodes Whiteboard")  
 [**Output**](challenges/Data-Structures/Trees/LevelwithMaxNodes/LevelwithMaxNodesOutput.png "Visit LevelwithMaxNodesOutPut")  
 [**Test**](LevelwithMaxNodesTest/UnitTest1.cs)
+
+#### Minimum Depth
+A method `FindMaxLevelNodes()` to calculating the minimum depth within a specialized class, allowing for better organization and potential future expansions.
+[**Whiteboard**](challenges/whiteboard-challenges/MinimumDepth.png "Visit MinimumDepth Whiteboard")  
+[**Output**](challenges/Data-Structures/Trees/MinimumDepth/MinimumDepthOutput.png "Visit MinimumDepthOutPut")  
+[**Test**](MinimumDepthTest/UnitTest1.cs)

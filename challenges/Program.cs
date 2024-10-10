@@ -330,20 +330,34 @@ namespace challenges
 
             //Level with Maximum Number of Nodes
 
-            BinaryTree Btree = new BinaryTree();
-           
-            Btree.Add(50);
-            Btree.Add(30);
-            Btree.Add(70);
-            Btree.Add(20);
-            Btree.Add(40);
-            Btree.Add(60);
-            Btree.Add(80);
+            //BinaryTree Btree = new BinaryTree();
+
+            //Btree.Add(50);
+            //Btree.Add(30);
+            //Btree.Add(70);
+            //Btree.Add(20);
+            //Btree.Add(40);
+            //Btree.Add(60);
+            //Btree.Add(80);
 
 
-            int maxLevel = Btree.FindMaxLevelNodes();
-            Console.WriteLine($"The level with the maximum number of nodes is: {maxLevel}"); 
+            //int maxLevel = Btree.FindMaxLevelNodes();
+            //Console.WriteLine($"The level with the maximum number of nodes is: {maxLevel}"); 
 
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //Minimum Depth
+
+            BinarySearchTree Btree = new BinarySearchTree();
+            Btree.Root = new TNode(1);
+            Btree.Root.Left = new TNode(2);
+            Btree.Root.Right = new TNode(3);
+            Btree.Root.Left.Left = new TNode(4);
+            Btree.Root.Left.Right = new TNode(5);
+
+            int minDepth = Btree.FindMinimumDepth();
+            Console.WriteLine($"Minimum Depth: {minDepth}"); 
         }
     }
 }

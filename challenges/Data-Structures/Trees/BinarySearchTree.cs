@@ -204,5 +204,37 @@ namespace challenges.Data_Structures.Trees
             CountNodesAtLevels(node.Right, level + 1, levelCounts);
         }
 
+        public int FindMinimumDepth()
+        {
+            return FindMinimumDepth(Root);
+        }
+        private int FindMinimumDepth(TNode node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+
+            // Leaf node
+            if (node.Left == null && node.Right == null)
+            {
+                return 1;
+            }
+
+            // If left subtree is null, recurse on right subtree
+            if (node.Left == null)
+            {
+                return FindMinimumDepth(node.Right) + 1;
+            }
+
+            // If right subtree is null, recurse on left subtree
+            if (node.Right == null)
+            {
+                return FindMinimumDepth(node.Left) + 1;
+            }
+
+            // If both left and right children exist, return the minimum of both
+            return Math.Min(FindMinimumDepth(node.Left), FindMinimumDepth(node.Right)) + 1;
+        }
     }
 }
