@@ -138,5 +138,31 @@ namespace challenges.Data_Structures.Trees
             return minValue;
         }
 
+
+        
+        public void PrintRightView()
+        {
+            int maxLevel = -1; 
+            PrintRightViewRecursive(Root, 0, ref maxLevel);
+            Console.WriteLine();
+        }
+
+        private void PrintRightViewRecursive(TNode node, int currentLevel, ref int maxLevel)
+        {
+           
+            if (node == null)
+                return;
+
+            if (currentLevel > maxLevel)
+            {
+                Console.Write(node.Data + " ");
+                maxLevel = currentLevel; 
+            }
+
+           
+            PrintRightViewRecursive(node.Right, currentLevel + 1, ref maxLevel);
+            PrintRightViewRecursive(node.Left, currentLevel + 1, ref maxLevel);
+        }
+
     }
 }
