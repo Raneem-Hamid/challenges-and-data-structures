@@ -187,5 +187,40 @@ namespace challenges.Data_Structures.LinkedList
 
             return mergedList;
         }
+
+        public int Length()
+        {
+            int length = 0;
+            Node current = Head;
+            while (current != null)
+            {
+                length++;
+                current = current.Next;
+            }
+            return length;
+        }
+        public void RotateLeft(int k)
+        {
+            if (Head == null || k == 0)
+            {
+                return;
+            }
+
+            int length = Length();
+            if (k > length) return;
+
+            // Find the new head at position k
+            Node current = Head;
+            for (int i = 1; i < k; i++)
+            {
+                current = current.Next;
+            }
+
+            Node newHead = current.Next;
+            current.Next = null;
+            Tail.Next = Head;
+            Head = newHead;
+        }
+
     }
 }

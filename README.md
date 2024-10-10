@@ -78,6 +78,14 @@ A function called ReverseWords returns a string with the words in reverse order.
 
 [CC08 Test](MergeSortedLinkedListsTest/UnitTest1.cs)
 
+- RotateLeft Method: This method shifts the first k nodes of a singly linked list to the end, updating the head and tail pointers.
+
+[whiteboard](challenges/whiteboard-challenges/LinkedList-RotatebyK.png "whiteboard")
+
+[Output](challenges/Data-Structures/LinkedList/LinkedList-RotatebyK/LinkedList-RotatebyKOutput.png "output")
+
+[Test](RotateLinkedListTests/UnitTest1.cs)
+
 ### Stack and Queue Implementation
 
 #### Stack Implementation
