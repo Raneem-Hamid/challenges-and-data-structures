@@ -224,3 +224,9 @@ A method `PrintRightView()` to print the right view of the tree. The class uses 
 [**Whiteboard**](challenges/whiteboard-challenges/PrintRightView.png "Visit PrintRightView Whiteboard")  
 [**Output**](challenges/Data-Structures/Trees/PrintRightView/PrintRightViewOutput.png "Visit PrintRightViewOutPut")  
 [**Test**](PrintRightViewTest/UnitTest1.cs)
+
+#### Level with Maximum Number of Nodes
+A method `FindMaxLevelNodes()` to find and return the level in a binary tree that has the maximum number of nodes.
+[**Whiteboard**](challenges/whiteboard-challenges/LevelwithMaxNodes.png "Visit LevelwithMaxNodes Whiteboard")  
+[**Output**](challenges/Data-Structures/Trees/LevelwithMaxNodes/LevelwithMaxNodesOutput.png "Visit LevelwithMaxNodesOutPut")  
+[**Test**](LevelwithMaxNodesTest/UnitTest1.cs)

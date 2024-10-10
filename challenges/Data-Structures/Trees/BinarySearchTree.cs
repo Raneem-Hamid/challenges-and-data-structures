@@ -164,5 +164,45 @@ namespace challenges.Data_Structures.Trees
             PrintRightViewRecursive(node.Left, currentLevel + 1, ref maxLevel);
         }
 
+
+        public int FindMaxLevelNodes()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("The tree is empty.");
+            }
+
+            // Create an array to hold the count of nodes at each level
+            int[] levelCounts = new int[100]; // Assuming a maximum of 100 levels
+            int maxLevel = 0;
+
+            // Start DFS traversal
+            CountNodesAtLevels(Root, 0, levelCounts);
+
+            // Find the level with the maximum nodes
+            for (int i = 0; i < levelCounts.Length; i++)
+            {
+                if (levelCounts[i] > levelCounts[maxLevel])
+                {
+                    maxLevel = i;
+                }
+            }
+
+            return maxLevel;
+        }
+
+        private void CountNodesAtLevels(TNode node, int level, int[] levelCounts)
+        {
+            if (node == null)
+                return;
+
+            // Increment the count for the current level
+            levelCounts[level]++;
+
+            // Traverse the left and right children
+            CountNodesAtLevels(node.Left, level + 1, levelCounts);
+            CountNodesAtLevels(node.Right, level + 1, levelCounts);
+        }
+
     }
 }
